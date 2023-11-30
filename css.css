@@ -335,3 +335,19 @@ section {
   background-color: var(--fc);
   margin-left: 2vw;
 } 
+.cont_of_comp
+{
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+.cont_of_logo
+{
+  padding: 2vw 5vw;
+  border-radius: 50%;
+  border: 1px dashed silver;
+}
+.logo_em.png
+{
+  width: 2vw;
+}
