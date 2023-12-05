@@ -1,9 +1,12 @@
 :root {
   --fc: rgb(46, 103, 197);
+  --black: black;
+  --red: rgb(175, 35, 26);
+  --white: white;
 }
 #bod {
   width: 98vw;
-  height: 200vw;
+  height: 300vw;
   overflow: hidden;
 }
 html {
@@ -56,7 +59,7 @@ button {
 .lin_of_li {
   width: 2vw;
   height: 3px;
-  background-color: aliceblue;
+  background-color: var(--white);
   margin-top: 0.2vw;
   border-radius: 3px;
 }
@@ -110,10 +113,10 @@ section {
   overflow: hidden;
 }
 .shadow {
-  background-color: black;
-  box-shadow: 0px 0px 100px 150px black;
+  background-color: var(--black);
+  box-shadow: 0px 0px 100px 150px var(--black);
   width: 100%;
-  height: 80vw;
+  height: auto;
   margin-top: 20vw;
   z-index: 1;
 }
@@ -122,11 +125,11 @@ section {
   width: 15vw;
   border-radius: 200px;
   height: 3.5vw;
-  color: aliceblue;
+  color: var(--white);
   background-color: var(--fc);
   z-index: 5;
   margin-left: 2.5vw;
-  border: 1px solid black;
+  border: 1px solid var(--black);
   outline: none;
   transition: all 300ms;
   overflow: hidden;
@@ -164,7 +167,7 @@ section {
   width: 2vw;
   height: 2vw;
   border-radius: 50%;
-  background: #fff;
+  background: var(--white);
   transform: translate(-50%, -100%) scale(0);
   animation: push_401 2s infinite linear;
 }
@@ -204,20 +207,24 @@ section {
 ::-webkit-scrollbar-thumb {
   background: linear-gradient(
     to top,
-    rgb(175, 35, 26),
+    var(--red),
     var(--fc)
   ); /* Color of the thumb */
   border-radius: 8px;
 }
 #conta_of_pack {
   display: flex;
+  flex-wrap: wrap;
+  width: 80.8vw;
   margin-top: 20vw;
   margin-left: 7vw;
 }
+
 .dot {
+  flex: 1 1 calc(33.333% - 4vw); /* Adjust the percentage based on your design */
   position: relative;
   border-radius: 200px;
-  margin: 2vw 2vw;
+  margin: 2vw;
   padding: 16vw 8vw;
   border: 2px dashed silver;
   background-color: transparent;
@@ -225,7 +232,7 @@ section {
   clip-path: stroke-box;
 }
 .cont_of_text {
-  color: #fff;
+  color: var(--white);
   position: absolute;
   font-size: 0.8vw;
   top: 22vw;
@@ -283,8 +290,8 @@ section {
   transform: translate(-50%, -50%); /* Center the element */
   position: absolute;
   border-radius: 100%;
-  background: linear-gradient(to top, rgb(175, 35, 26), var(--fc));
-  box-shadow: 0px 10px 5px rgb(175, 35, 26);
+  background: linear-gradient(to top, var(--red), var(--fc));
+  box-shadow: 0px 10px 5px var(--red);
   animation: moveedot 2s infinite linear; /* Adjust the duration as needed */
 }
 
@@ -320,8 +327,7 @@ section {
   height: 50vw;
   top: -20vw;
   z-index: -8;
-  position: relative; 
- 
+  position: relative;
   background: url(Mars1.jpg);
 }
 #cont_of_po {
@@ -334,20 +340,37 @@ section {
   height: 1vw;
   background-color: var(--fc);
   margin-left: 2vw;
-} 
-.cont_of_comp
-{
+}
+.cont_of_comp {
   display: flex;
   flex-wrap: wrap;
-  
+  max-width: 72vw;
+  transform: translate(17%);
 }
-.cont_of_logo
-{
-  padding: 2vw 5vw;
-  border-radius: 50%;
+.cont_of_logo {
+  border-radius: 32%;
+  padding: 1vw 2vw;
   border: 1px dashed silver;
+  margin-left: 2vw;
+  margin-top: 4vw;
 }
-.logo_em.png
-{
-  width: 2vw;
+.lo_of_com {
+  width: 8vw;
+}
+#Comp_cont {
+  height: 20vw;
+}
+#Sun_and_moon {
+  top: 8vw;
+  left: 90.5vw;
+  position: absolute;
+  cursor: pointer;
+}
+#moon {
+  left: 0;
+  position: relative;
+}
+#sun {
+  left: -2.2vw;
+  position: relative;
 }
