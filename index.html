@@ -5,8 +5,9 @@
     <link rel="stylesheet" href="css.css" />
   </head>
   <body>
+    <img src="https://media.giphy.com/media/WiIuC6fAOoXD2/giphy.gif " id="loader" alt="">
     <div id="bod">
-      <input type="checkbox" name="ms" id="ms" />
+      <input type="checkbox" name="ms" id="ms" hidden />
       <label for="ms">
         <ul id="Sun_and_moon">
           <li class="fa-solid fa-moon fa-2xl" id="moon"></li>
@@ -105,8 +106,15 @@
             <div class="lin_of_li" id="l2"></div>
             <div class="lin_of_li" id="l3"></div>
           </div>
+        
+        <div id="d_cont_of_right_list">
+          <ul id="cont_of_right_list">
+           <a href="#about"><li class="lils">About</li></a> 
+           <a href="#conta_of_pack"><li class="lils">Our products</li></a>
+           <a href="#companyyys"><li class="lils">References</li></a> 
+          </ul>
         </div>
-
+      </div>
         <svg
           id="line1"
           xmlns="http://www.w3.org/2000/svg"
@@ -175,7 +183,7 @@
         <span class="loader"></span>
       </section>
       <div class="shadow">
-        <p
+        <p id="about"
           style="
             color: rgb(239, 238, 238);
             font-size: 4vw;
@@ -248,7 +256,7 @@
               </p>
             </div>
           </div>
-          <div class="cont_of_contant">
+          <div class="cont_of_contant" id="co">
             <div class="dot">
               <p style="color: silver; margin-top: -13vw">
                 --- <span style="color: rgb(46, 103, 197)">3</span> ---
@@ -303,7 +311,7 @@
           id="Comp_cont"
           style="z-index: 5; margin-top: 7.9vw; color: black"
         >
-          <div class="cont_of_comp">
+          <div class="cont_of_comp" id="companyyys">
             <div class="cont_of_logo">
               <img src="logo_em.png" class="lo_of_com" alt="" />
             </div>
@@ -352,6 +360,24 @@
           </div>
         </div>
       </div>
+      <div id="section3">
+        <p
+          style="
+            font-size: 5vw;
+            color: aliceblue;
+            padding-top: 13vw;
+            padding-left: 31vw;
+          "
+        >
+          Our Case Studies
+        </p>
+        <div id="cont_of_po">
+          <div class="point"></div>
+          <div class="point"></div>
+          <div class="point"></div>
+        </div>
+        <div class="cont_of_logo" id="jet_c"></div>
+      </div>
     </div>
 
     <script>
@@ -395,4 +421,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html>
+</html> 
