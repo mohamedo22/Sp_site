@@ -486,3 +486,13 @@ section {
   margin-left: -2vw;
   margin-top: -7vw;
 }
+.b_s
+{
+  border: 1px solid var(--fc);
+  background-color: transparent;
+  padding: 1.2vw 2vw;
+  color: aliceblue;
+  border-radius: 20px;
+  font-weight: bold;
+  letter-spacing: .2vw;
+}
