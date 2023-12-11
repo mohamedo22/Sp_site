@@ -1,4 +1,10 @@
 
+:root {
+  --fc: rgb(46, 103, 197);
+  --black: black;
+  --red: rgb(175, 35, 26);
+  --white: white;
+}
 #bod {
   width: 98vw;
   height: 300vw;
@@ -187,14 +193,14 @@ section {
     transform: translate(-50%, -100%) scale(0);
   }
 }
-#r1 {
+.r1 {
   width: 7vw;
   margin-left: 70vw;
   transform: scale3d(10, 10, 10); /* Adjust the scaling factors as needed */
   filter: blur(0.3px);
 }
 
-#r2 {
+.r2 {
   top: -23vw;
   left: -85vw;
   position: relative;
@@ -339,12 +345,6 @@ section {
 #Comp_cont {
   height: 20vw;
 }
-:root {
-  --fc: rgb(46, 103, 197);
-  --black: black;
-  --red: rgb(175, 35, 26);
-  --white: white;
-}
 #Sun_and_moon {
   top: 8vw;
   left: 90.5vw;
@@ -454,11 +454,8 @@ section {
   width: 70vw;
   height: 20vw;
   margin-left: 13vw;
-  background-image: url(Jet1\ \(1\).jpg);
-  background-repeat: no-repeat;
-  background-size:900px;
-  background-position: -25px;
   opacity: .9;
+  overflow: hidden;
 }
 #loader
 {
@@ -467,17 +464,25 @@ section {
   width: 10%;
   height: 10%;
   opacity: 1;
-  animation: hid 300ms;
+  animation: hid 3s  ;
+  animation-fill-mode:forwards;
   top: 20vw;
   left: 45vw;
+  background-color: aliceblue;
 }
-@keyframes hid{
-  0%{
-    width: 90%;
-  height: 50%;
-  }
-  100%{
-    width: 0%;
-  height: 0%;
-  }
+@keyframes hid {
+  0% {
+    visibility: inherit;
+ }
+  100% {
+    visibility: hidden;
+ }
+}
+#v_j
+{
+  position: relative;
+  z-index: -8;
+  width: inherit;
+  margin-left: -2vw;
+  margin-top: -7vw;
 }
