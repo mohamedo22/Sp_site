@@ -15,7 +15,8 @@
         </ul>
       </label>
       <!-------------------------- section1 -------------------------------->
-      <section>
+      <section >
+        <img src="Moon_images.png" id="moon_im" alt="">
         <img id="earth-img" src="earth-1980467.jpg" alt="Earth" />
         <img
           id="logo"
@@ -59,7 +60,7 @@
               sans-serif;
           "
         >
-          LAUNCHING
+          LAUNCHIN<span style="position: relative; z-index:10;">G</span>
         </p>
         <p
           style="
@@ -288,7 +289,7 @@
         >
           REFERENCES
         </p>
-        <div id="cont_of_po">
+        <div class="cont_of_po">
           <div class="point"></div>
           <div class="point"></div>
           <div class="point"></div>
@@ -371,13 +372,13 @@
         >
           Our Case Studies
         </p>
-        <div id="cont_of_po">
+        <div class="cont_of_po">
           <div class="point"></div>
           <div class="point"></div>
           <div class="point"></div>
         </div>
         <div class="cont_of_logo" id="jet_c">
-          <video autoplay loop id="v_j">
+          <video autoplay loop muted id="v_j">
             <source src="Why modern fighter jet combat is so rare.mp4" type="video/mp4">
           </video>
           <div style="font-size: 5vw; color: var(--fc); margin-top: -34vw; margin-left: 8vw; ">01</div>
@@ -417,20 +418,95 @@
       >
         OUR BLOG
       </p>
-      <div id="cont_of_po" style="margin-left: -10.2vw;">
+      <div class="cont_of_po" style="margin-left: -10.2vw;">
         <div class="point"></div>
         <div class="point"></div>
         <div class="point"></div>
       </div>
       </div>
       <p style="width: 50vw; margin-top: -18vw; margin-left: 5vw;">
-     Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea unde sint provident voluptatibus nulla itaque. Quas odit assumenda ex impedit voluptatem ut quia eligendi voluptate cumque! Ratione, nulla eligendi!
-     Quo pariatur quam quidem distinctio enim? Praesentium quisquam laborum aliquam perferendis aperiam nihil earum illo aut eos nostrum facilis ipsam voluptas architecto optio, aspernatur beatae ab unde neque libero consectetur?
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque ea unde sint provident voluptatibus nulla itaque. Quas odit assumenda ex impedit voluptatem ut quia eligendi voluptate cumque! Ratione, nulla eligendi!
+        Quo pariatur quam quidem distinctio enim? Praesentium quisquam laborum aliquam perferendis aperiam nihil earum illo aut eos nostrum facilis ipsam voluptas architecto optio, aspernatur beatae ab unde neque libero consectetur?
       </p>
+      <div id="conta_of_pack" style="margin-left: 3vw; margin-top:5vw">
+        <div class="cont_of_contant sec_c">
+          <div class="dot">
+            <p style="color: silver; margin-top: -13vw">
+            </p>
+            <img
+              src="astronaut_image.png"
+              alt="Satalite"
+              class="img_in_dot po"
+            />
+            <p class="cont_of_text">
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+              Provident a maiores in debitis numquam qui at dolor soluta
+              voluptas quasi laboriosam accusantium eveniet dignissimos
+              similique sapiente, nam illo? Inventore, rerum.
+            </p>
+          </div>
+          vw
+        </div>
+        <div class="cont_of_contant sec_c">
+          <div class="dot">
+            <p style="color: silver; margin-top: -13vw">
+            </p>
+            <img
+              src="astronaut_image.png"
+              style="top: 2.5vw"
+              alt="Telescope"
+              class="img_in_dot po"
+            />
+            <p class="cont_of_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              voluptates dicta porro doloremque doloribus quis, quaerat
+              ducimus at molestiae laboriosam asperiores cupiditate. Pariatur
+              atque, quidem ratione nostrum aliquid eius fuga!
+            </p>
+          </div>
+        </div>
+        <div class="cont_of_contant sec_c">
+          <div class="dot">
+            <p style="color: silver; margin-top: -13vw">
+            </p>
+            <img
+            src="astronaut_image.png"
+              alt="Telescope"
+              class="img_in_dot po"
+            />
+            <p class="cont_of_text">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus
+              voluptates dicta porro doloremque doloribus quis, quaerat
+              ducimus at molestiae laboriosam asperiores cupiditate. Pariatur
+              atque, quidem ratione nostrum aliquid eius fuga!
+            </p>
+          </div>
+        </div>
       </div>
-        
+      <button class="b_s" style="margin-top: 6vw;">SEE ALL</button>
+       
+        <i class="fa-solid fa-chevron-right lar "></i>
+        <i class="fa-solid fa-chevron-right lar" style="margin-left: 0vw;"></i>
+        <i class="fa-solid fa-chevron-right lar" style="margin-left:0vw ;"></i>
+    
+      <div class="c_orr" >
+        <i class="fa-solid fa-chevron-left lar" style="left: 73vw; top: -2.6vw; position: relative; "></i>
+        <i class="fa-solid fa-chevron-left lar" style="left: 89.5vw; top: -2.6vw; position: relative; "></i>
+        <i class="fa-solid fa-chevron-left lar" style="left: 106vw; top: -2.6vw; position: relative;"></i>
+      </div>
+      </div>
     </div>
    <script>
+    let moon = document.getElementById("moon_im");
+    let dy = 800;
+
+    window.addEventListener('scroll', () => {
+      let scr = window.scrollY;
+      dy = 880 - scr; // Adjust the calculation based on your preference
+      moon.style.left = dy + 'px';
+    });
+
+
       // JavaScript function for infinite remove and retype text
       function infiniteRemoveAndRetypeText() {
         var textContainer = document.getElementById("textContainer");
@@ -462,8 +538,6 @@
         // Start the process by typing text
         typeNextCharacter();
       }
-
-      // Call the function on page load
       window.onload = infiniteRemoveAndRetypeText;
     </script>
     <script
@@ -471,4 +545,4 @@
       crossorigin="anonymous"
     ></script>
   </body>
-</html> 
+</html>

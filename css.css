@@ -7,7 +7,7 @@
 }
 #bod {
   width: 98vw;
-  height: 300vw;
+  height: 500vw;
   overflow: hidden;
 }
 html {
@@ -143,7 +143,7 @@ section {
 }
 #rocket {
   width: 2vw;
-  margin-top: -32vw;
+  margin-top: -33vw;
   margin-left: 8vw;
   transition: all 300ms;
 }
@@ -315,7 +315,7 @@ section {
   position: relative;
   background: url(Mars1.jpg);
 }
-#cont_of_po {
+.cont_of_po {
   display: flex;
   padding-top: 1vw;
   padding-left: 44vw;
@@ -531,4 +531,22 @@ section {
   100%{
     transform: translateX(-5vw);
   }
+}
+#moon_im
+{
+  position:absolute;
+  width:15vw;
+  top:37vw;
+  z-index:-1;
+  left: 71.2vw;
+  filter: brightness(75%);
+}
+.sec_c
+{
+  border-radius: 30%;
+  margin-left: 8vw;
+}
+.po
+{
+  margin-left: -2vw;
 }
