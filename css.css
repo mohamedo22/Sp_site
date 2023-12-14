@@ -550,3 +550,14 @@ section {
 {
   margin-left: -2vw;
 }
+#sec_6
+{
+  width: 100%;
+  position: relative;
+  top: 3vw;
+  height: 100vw;
+  background-repeat: no-repeat;
+  background-size:contain;
+  background-image: url(Screenshot\ \(76\).png);
+  
+} 
