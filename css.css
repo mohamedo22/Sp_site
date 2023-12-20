@@ -4,6 +4,7 @@
   --black: black;
   --red: rgb(175, 35, 26);
   --white: white;
+  --silver: rgb(126, 124, 124);
 }
 #bod {
   width: 98vw;
@@ -381,7 +382,7 @@ section {
   --black: white;
   --red: rgb(230, 137, 131);
   --white: black;
-  
+  --silver: black;
 }
 #d_cont_of_right_list
 {
@@ -561,3 +562,190 @@ section {
   background-image: url(Screenshot\ \(76\).png);
   
 } 
+.p
+{
+  color: var(--silver);
+  position: relative;
+  z-index: 1;
+  width: 30vw;
+  left: 5vw;
+  top: 2vw;
+  
+}
+.d_im{
+ width: 30vw;
+ height: 10vw;
+}
+#d_c_i
+{
+  display: flex;
+  max-width: 80vw;
+  flex-wrap: wrap;
+  margin-left: 28vw;
+  margin-top: -5vw;
+}
+#mskelkhtam
+{
+  background: url(earth.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 50vw;
+}
+#rocket2
+{
+  width: 40vw;
+  margin-top: 1vw;
+  margin-left: 10vw;
+}
+.input_of_form
+{
+  margin-left: 2vw;
+  margin-top: 1vw;
+  background-color: rgba(192, 192, 192, 0.526);
+  border-radius: 25px;
+  padding: 1vw 2vw;
+  border: 1px solid silver;
+  outline: none;
+}
+textarea
+{
+  margin-left: 2vw;
+  margin-top: 1vw;
+  background-color: rgba(192, 192, 192, 0.526);
+  border-radius: 25px;
+  padding: 1vw 8vw;
+  border: 1px solid silver;
+  outline: none;
+}
+#l_form
+{
+  margin-left: 58vw;
+}
+#cont_of_soc
+{
+    display: flex;
+    width: 15vw;
+    height: 15vw;
+   
+    border-radius: 9px;
+    margin-left: 45vw;
+   
+    margin-top: 5vw;
+}
+.soc_co
+{
+    background-color: blue;
+    width: 5vw;
+    height: 5vw;
+    z-index: 1;
+    margin-top: 30%;
+    border-radius: 10px;
+    
+    transition: all 200ms;
+}
+#card
+{
+    width: 15vw;
+    padding: 5vw;
+    z-index: 2;
+    margin-left: -15vw;
+    background: linear-gradient(to top , var(--red) ,var(--fc));
+    transition: all 1.5s;
+    border-radius: 9px;
+}
+#cont_of_soc:hover #card
+{
+  background: transparent;
+  margin-left: -10vw;
+  z-index: -2;
+}
+#text_of_card
+{
+    font-size: 2vw;
+    z-index: 3;
+    margin-left: -10vw;
+    transition: all 1s;
+    margin-top: 3.5vw;
+}
+#text_of_card pre
+{
+    transition: all 1s;
+    
+}
+#cont_of_soc:hover #text_of_card,#cont_of_soc:hover #text_of_card pre
+{
+    color: transparent;
+    z-index: -2;
+}
+#cont_of_soc:hover .soc_co
+{
+    margin-left: 1vw;
+   
+}
+.soc_co:nth-child(1)
+{
+    background-color:white;
+    transition: all 300ms;
+}
+.soc_co:nth-child(1) #face
+{
+   fill: blue ;
+   margin-top: 1vw;
+   margin-left: 1.5vw;
+  
+  
+}
+.soc_co:nth-child(1):hover
+{
+    background-color: rgb(43, 43, 251);
+}
+.soc_co:nth-child(1):hover #face
+{
+
+  fill: white;
+  
+}
+.soc_co:nth-child(2)
+{
+   background-color: white;
+   
+}
+.soc_co:nth-child(2) #whatsapp
+{
+    fill: green;
+    margin-left: .7vw;
+    margin-top: 1vw;
+    width: 3vw;
+}
+.soc_co:nth-child(2) #whatsapp path
+{
+    fill: green;
+}
+.soc_co:nth-child(2):hover
+{
+    background-color: rgb(4, 160, 4);
+}
+.soc_co:nth-child(2):hover #whatsapp path
+{
+    fill: white;
+}
+.soc_co:nth-child(3) #linkd
+{
+    width: 3vw;
+    margin-top: 1vw;
+    margin-left: .7vw;
+}
+.soc_co:nth-child(3)
+{
+    background-color: white;
+}
+.soc_co:nth-child(3) #linkd path{
+    fill: rgb(10,102,194);
+}
+.soc_co:nth-child(3):hover #linkd path{
+    fill: white;
+}
+.soc_co:nth-child(3):hover
+{
+    background-color: rgb(10,102,194);
+}
