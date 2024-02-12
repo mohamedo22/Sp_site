@@ -15,7 +15,6 @@ html {
   width: 100%;
   height: 100%;
 }
-
 body {
   width: 100%;
   height: 80vw;
@@ -69,10 +68,6 @@ button {
   rotate: -45deg;
   margin-top: 0.6vw;
   margin-left: 0.4vw;
-}
-.con_of_lis:hover {
-  border-width: 4px;
-
 }
 .con_of_lis:hover #d_cont_of_right_list
 {
@@ -469,15 +464,7 @@ section {
   animation-fill-mode:forwards;
   top: 20vw;
   left: 45vw;
-  background-color: aliceblue;
-}
-@keyframes hid {
-  0% {
-    visibility: inherit;
- }
-  100% {
-    visibility: hidden;
- }
+  display: block;
 }
 #v_j
 {
@@ -640,7 +627,6 @@ textarea
     z-index: 1;
     margin-top: 30%;
     border-radius: 10px;
-    
     transition: all 200ms;
 }
 #card

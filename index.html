@@ -4,6 +4,7 @@
     <title>Site</title>
     <link rel="stylesheet" href="css.css" />
   </head>
+  
   <body>
     <img src="giphy-unscreen.gif" id="loader" alt="">
     <div id="bod">
@@ -605,6 +606,10 @@
        </div>
     </div>
    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById("loader").style.display = 'none';
+    document.getElementById("bod").style.display = 'block';
+    });
     let moon = document.getElementById("moon_im");
     let dy = 800;
 
@@ -648,9 +653,5 @@
       }
       window.onload = infiniteRemoveAndRetypeText;
     </script>
-    <script
-      src="https://kit.fontawesome.com/a0dcba6903.js"
-      crossorigin="anonymous"
-    ></script>
   </body>
 </html>
